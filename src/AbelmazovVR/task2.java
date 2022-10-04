@@ -23,7 +23,7 @@ public class task2 {
             S = a*b;
         }
         else S = ( 0.5 * (Math.pow(b,2)-Math.pow(a,2)) * Math.sin(Math.toRadians(dig)) * Math.sin(Math.toRadians(dig))  / Math.sin(Math.toRadians(dig * 2)));
-        System.out.printf("Площадь трапеции(квадратные см) = %f\n", S);
+        System.out.printf("Площадь (квадратные см) = %f\n", S);
     }
     public static void goal2(){ //задание 2. C клавиатуры вводятся: целые числа А и В выражающие объем информации  в мегабайтах. Перевести А в байты,  В  в гигабайты. Найти их сумму в килобайтах.
         System.out.print("2. Сумма Кбайт.\n");
