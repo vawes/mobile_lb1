@@ -18,8 +18,11 @@ public class task2 {
         System.out.print("Введите величину угла при основании(в градусах):");
         dig = input.nextInt();
 
-
-        S = ( 0.5 * (Math.pow(b,2)-Math.pow(a,2)) * Math.sin(Math.toRadians(dig)) * Math.sin(Math.toRadians(dig))  / Math.sin(Math.toRadians(dig * 2)));
+        if(a==b & dig ==90){
+            System.out.print("Это квадрат!");
+            S = a*b;
+        }
+        else S = ( 0.5 * (Math.pow(b,2)-Math.pow(a,2)) * Math.sin(Math.toRadians(dig)) * Math.sin(Math.toRadians(dig))  / Math.sin(Math.toRadians(dig * 2)));
         System.out.printf("Площадь трапеции(квадратные см) = %f\n", S);
     }
     public static void goal2(){ //задание 2. C клавиатуры вводятся: целые числа А и В выражающие объем информации  в мегабайтах. Перевести А в байты,  В  в гигабайты. Найти их сумму в килобайтах.
