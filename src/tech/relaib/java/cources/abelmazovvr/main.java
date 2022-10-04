@@ -1,4 +1,4 @@
-package AbelmazovVR;
+package tech.relaib.java.cources.abelmazovvr;
 
 import java.util.Scanner;
 
