@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class task1 {
 
     public static void mat1(){
-        double y,e,w,x,fin =0;
+        double y,e,w,x,fin;
         Scanner input = new Scanner(System.in);
 
         System.out.println("Введите значения для первого примера(до трёх знаков после запятой):");
@@ -17,11 +17,11 @@ public class task1 {
         w = input.nextFloat();
         System.out.print("Переменная x = ");
         x = input.nextFloat();
-        fin = (y * Math.sqrt(Math.abs(w)) * Math.tan(x) * w) / (1.85 * w + Math.pow(Math.sqrt(y*y), 3));
+        fin = (y * Math.pow(e,Math.sqrt(Math.abs(w))) * Math.tan(x) * w) / (1.85 * w + Math.pow(Math.sqrt(y*y), 3));
         System.out.printf("Значение выражения = %f\n", fin);
     }
     public static void mat2(){
-        double a,x,z =0;
+        double a,x,z;
         Scanner input = new Scanner(System.in);
 
         System.out.println("Введите значения для второго примера(до трёх знаков после запятой):");
